@@ -198,7 +198,7 @@ input{
 .auto_content{
     font-size: 1.1vw;
     width: 35vw;
-    height: 65vh;
+    height: 75vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
@@ -243,7 +243,7 @@ input{
     margin-right: 2vw;
 }
 .top_111{
-    margin-bottom: 7.8vw;
+    margin-bottom: 12.85vw;
 }
 .title_other_auto{
     font-size: 1.6vw;
@@ -283,11 +283,20 @@ input{
     transition: 0.5s;
     display: block;
 }
-.form_auth_phone, .form_auth_email, .form_register{
+.form_auth_phone, .form_auth_email{
     border-radius: 1vw;
     background-color: #FDFEFF;
     color: #3D3F76;
     height: 15vw;
+    border: 2px solid white;
+    margin-bottom: 5vw;
+}
+.form_register{
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    background-color: #FDFEFF;
+    color: #3D3F76;
+    height: 19vw;
     border: 2px solid white;
 }
 .header_email, .header_phone{
@@ -315,6 +324,7 @@ input{
     border-radius: 1vw 1vw 0 0 ;
     font-size: 1.3vw;
     line-height: 3vw;
+    margin-bottom: 1vw;
 }
 .header_register div{
     cursor: pointer;
@@ -344,7 +354,7 @@ input{
 }
 
 
-.input_teg_email_register, .input_password_email_register, .input_teg_phone_register, .input_password_phone_register{
+.input_teg_email_register, .input_password_email_register, .input_teg_phone_register, .input_password_phone_register, .input_password_2_email_register{
     text-align: center;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
@@ -352,7 +362,7 @@ input{
 .submit_button{
     text-align: center;
 }
-.input_teg_phone_register input, .input_teg_email_register input, .input_password_phone_register input, .input_password_email_register input{
+.input_teg_phone_register input, .input_teg_email_register input, .input_password_phone_register input, .input_password_email_register input, .input_password_2_email_register input{
     width: 18vw;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -369,6 +379,9 @@ input{
     background: #F8F7F6;
     border: #FF2C9E 1px solid;
     border-radius: 1vw;
+}
+.error_alert_email, .error_alert_phone, .error_alert_register{
+    display: none;
 }
 
 

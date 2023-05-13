@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
     <script src="{% static 'js/forms.js' %}"></script>
+    <script src="{% static 'js/error_auth.js' %}"></script>
 </head>
 <body>
     <main>
@@ -72,6 +73,7 @@
                                     <input type="submit" value="log in">
                                 </div>
                             </form>
+                            <div class="error_alert_phone" id="error_alert_phone"><{{phone_errors}}/div>
                         </div>
                         <div class="form_auth_email form_inactive">
                             <form action="" class="form" method="post">
@@ -94,6 +96,7 @@
                                     <input type="submit" value="log in">
                                 </div>
                             </form>
+                            <div class="error_alert_email" id="error_alert_email">{{login_errors}}</div>
                         </div>
                         <div class="form_register form_inactive">
                             <div class="header_register">
@@ -112,13 +115,14 @@
                                 <div class="input_password_email_register">
                                     <input type="password" name="password1" id="3" placeholder="Enter password">
                                 </div>
-                                <div class="input_password_email_register">
-                                    <input type="password" name="password2" placeholder="Repeat password">
+                                <div class="input_password_2_email_register">
+                                    <input type="password" name="password2" id="reg_5" placeholder="Repeat password">
                                 </div>
                                 <div class="submit_button">
                                     <input type="submit" value="register">
                                 </div>
                             </form>
+                            <div class="error_alert_register" id="error_alert_register">{{register_errors}}</div>
                         </div>
                     </div>
                     <div class="success">
