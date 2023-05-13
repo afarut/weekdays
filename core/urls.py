@@ -5,6 +5,9 @@ from core import views
 app_name = "core"
 
 urlpatterns = [
-    path("auth/", views.auth_request, name="auth_request"),
+    path("", views.index, name="index"),
+    path("auth/", views.AuthView.as_view(), name="auth"),
+    path("reg/", views.RegView.as_view(), name="reg"),
+    path("logout/", views.logout_request, name="i_am"),
     path("i_am/", views.i_am, name="i_am"),
 ]

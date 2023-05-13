@@ -53,6 +53,7 @@
                         </div>
                         <div class="form_auth_phone form_inactive">
                             <form action="" class="form" method="post">
+                                {% csrf_token %}
                                 <div class="header_phone">
                                     <div class="back" id="back_1">
                                         back
@@ -74,6 +75,7 @@
                         </div>
                         <div class="form_auth_email form_inactive">
                             <form action="" class="form" method="post">
+                                {% csrf_token %}
                                 <div class="header_email">
                                     <div class="back" id="back_2">
                                         back
@@ -83,10 +85,10 @@
                                     </div>
                                 </div>
                                 <div class="input_teg_email">
-                                    <input type="text" name="1" id="1" placeholder="Enter email">
+                                    <input type="username" name="username" id="1" placeholder="Enter username">
                                 </div>
                                 <div class="input_password_email">
-                                    <input type="password" name="" id="" placeholder="Enter password">
+                                    <input type="password" name="password" id="" placeholder="Enter password">
                                 </div>
                                 <div class="submit_button">
                                     <input type="submit" value="log in">
@@ -99,15 +101,19 @@
                                     back
                                 </div>
                             </div>
-                            <form action="" class="form" method="post">
+                            <form action="{% url 'core:reg' %}" class="form" method="post">
+                                {% csrf_token %}
                                 <div class="input_teg_email_register">
-                                    <input type="text" name="1" id="1" placeholder="Enter email">
+                                    <input type="email" name="email" id="1" placeholder="Enter email">
                                 </div>
                                 <div class="input_teg_phone_register">
-                                    <input type="text" name="2" id="2" placeholder="Enter username">
+                                    <input type="text" name="username" id="2" placeholder="Enter username">
                                 </div>
                                 <div class="input_password_email_register">
-                                    <input type="password" name="3" id="3" placeholder="Enter password">
+                                    <input type="password" name="password1" id="3" placeholder="Enter password">
+                                </div>
+                                <div class="input_password_email_register">
+                                    <input type="password" name="password2" placeholder="Repeat password">
                                 </div>
                                 <div class="submit_button">
                                     <input type="submit" value="register">
