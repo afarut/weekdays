@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fdea62c4eb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <script src="{% static 'js/forms.js' %}"></script>
+</head>
+<body>
+    <main>
+        <div class="container_fluid">
+            <div class="container">
+                <div class="auto_content">
+                    <div class="title_auto">
+                        Log in or sign up
+                    </div>
+                    <div class="soc_med">
+                        <div class="title_soc_med">
+                            With social media
+                        </div>
+                        <div class="buttons_soc_med">
+                            <div class="button_soc_med">
+                                <a href="#"><svg fill="#4285f4" xmlns="http://www.w3.org/2000/svg" width="3vw" height="3vw" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a>
+                            </div>
+                            <div class="button_soc_med">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" width="3vw" height="3vw"><defs><path id="A" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/></defs><clipPath id="B"><use xlink:href="#A"/></clipPath><g transform="matrix(.727273 0 0 .727273 -.954545 -1.45455)"><path d="M0 37V11l17 13z" clip-path="url(#B)" fill="#fbbc05"/><path d="M0 11l17 13 7-6.1L48 14V0H0z" clip-path="url(#B)" fill="#ea4335"/><path d="M0 37l30-23 7.9 1L48 0v48H0z" clip-path="url(#B)" fill="#34a853"/><path d="M48 48L17 24l-4-3 35-10z" clip-path="url(#B)" fill="#4285f4"/></g></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other_auto">
+                        <div class="top_111">
+                        <div class="title_other_auto">
+                            Other ways
+                        </div>
+                        <div class="phone_email">
+                            <a class="auto_phone" id="auto_phone">
+                                Phone number
+                            </a>
+                            <a class="auto_email" id="auto_email">
+                                Email
+                            </a>
+                        </div>
+                        </div>
+                        <div class="form_auth_phone form_inactive">
+                            <form action="" class="form" method="post">
+                                <div class="header_phone">
+                                    <div class="back" id="back_1">
+                                        back
+                                    </div>
+                                    <div class="register" id="register_2">
+                                        register
+                                    </div>
+                                </div>
+                                <div class="input_teg_phone">
+                                    <input type="text" name="1" id="1" placeholder="Enter number">
+                                </div>
+                                <div class="input_password_phone">
+                                    <input type="password" name="" id="" placeholder="Enter password">
+                                </div>
+                                <div class="submit_button">
+                                    <input type="submit" value="log in">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form_auth_email form_inactive">
+                            <form action="" class="form" method="post">
+                                <div class="header_email">
+                                    <div class="back" id="back_2">
+                                        back
+                                    </div>
+                                    <div class="register" id="register">
+                                        register
+                                    </div>
+                                </div>
+                                <div class="input_teg_email">
+                                    <input type="text" name="1" id="1" placeholder="Enter email">
+                                </div>
+                                <div class="input_password_email">
+                                    <input type="password" name="" id="" placeholder="Enter password">
+                                </div>
+                                <div class="submit_button">
+                                    <input type="submit" value="log in">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form_register form_inactive">
+                            <div class="header_register">
+                                <div class="back" id="back_3">
+                                    back
+                                </div>
+                            </div>
+                            <form action="" class="form" method="post">
+                                <div class="input_teg_email_register">
+                                    <input type="text" name="1" id="1" placeholder="Enter email">
+                                </div>
+                                <div class="input_teg_phone_register">
+                                    <input type="text" name="2" id="2" placeholder="Enter username">
+                                </div>
+                                <div class="input_password_email_register">
+                                    <input type="password" name="3" id="3" placeholder="Enter password">
+                                </div>
+                                <div class="submit_button">
+                                    <input type="submit" value="register">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="success">
+                        *I agree with the Privacy Policy and Terms of Use
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
